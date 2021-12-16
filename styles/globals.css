@@ -1,3 +1,15 @@
+:root {
+  --theme-color-gray: #6c757d;
+  --theme-color-dark: #495057;
+  --theme-color-darker: #343a40;
+  --theme-color-darkest: #212529;
+  --theme-color-light: #ced4da;
+  --theme-color-lighter: #e9ecef;
+  --theme-color-lightest: #f8f9fa;
+
+  --font-color: var(--theme-color-lightest);
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +25,5 @@ a {
 
 * {
   box-sizing: border-box;
+  color: var(--font-color);
 }
