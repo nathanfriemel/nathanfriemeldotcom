@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import styles from '../styles/Home.module.css'
 import { GithubIcon, LinkedinIcon, TwitterIcon } from '../icons'
+import Nav from '../components/nav'
 
 const IndexPage = () => {
   return (
@@ -13,12 +14,7 @@ const IndexPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className={styles.leftNav}>
-        <span style={{ marginTop: '1rem' }}>NF</span>
-        <TwitterIcon fill="#FFFFFF" />
-        <LinkedinIcon fill="#FFFFFF" />
-        <GithubIcon fill="#FFFFFF" />
-      </nav>
+      <Nav />
 
       <main className={styles.main}>
         <article className={styles.article}>

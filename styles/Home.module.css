@@ -8,20 +8,6 @@
   height: 100vh;
 }
 
-.leftNav {
-  background-color: var(--theme-color-darkest);
-  display: grid;
-  grid-template-rows: 1fr 48px 48px 48px;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "."
-    "."
-    "."
-    ".";
-  justify-items: center;
-}
-
 .main {
   background-color: var(--theme-color-darker);
 }
