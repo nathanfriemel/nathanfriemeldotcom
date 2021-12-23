@@ -11,3 +11,71 @@
     ".";
   justify-items: center;
 }
+
+.mobileMenu {
+  cursor: pointer;
+  --top-line-transform: rotate(45deg) translateX(5px) translateY(5px);
+  --bottom-line-transform: rotate(-45deg) translateX(2px) translateY(-2px);
+}
+
+.mobileLine {
+  background-color: var(--theme-color-lightest);
+  display: block;
+  height: 3px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.mobileLine:last-child {
+  margin-bottom: 0;
+}
+
+.menuOpen .topLine {
+  animation-duration: 1s;
+  animation-name: rotateTopLine;
+  margin-bottom: 0;
+  transform: var(--top-line-transform);
+}
+
+@keyframes rotateTopLine {
+  from {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+  }
+
+  to {
+    transform: var(--top-line-transform);
+  }
+}
+
+.menuOpen .middleLine {
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-name: hideMiddleLine;
+}
+
+@keyframes hideMiddleLine {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.menuOpen .bottomLine {
+  animation-duration: 1s;
+  animation-name: rotateBottomLine;
+  margin-bottom: 0;
+  transform: var(--bottom-line-transform);
+}
+
+@keyframes rotateBottomLine {
+  from {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+  }
+
+  to {
+    transform: var(--bottom-line-transform);
+  }
+}
