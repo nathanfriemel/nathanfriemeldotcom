@@ -1,15 +1,20 @@
 import styles from './nav.module.css'
-import MobileNavControls from './mobileNavControls'
+import MobileNavControls from './mobileNav'
 import { GithubIcon, LinkedinIcon, TwitterIcon } from '../../icons'
+
+const socialColor = '#ffffff'
 
 const Nav = () => {
   return (
-    <nav className={styles.leftNav}>
-      <MobileNavControls />
-      <TwitterIcon fill="#FFFFFF" />
-      <LinkedinIcon fill="#FFFFFF" />
-      <GithubIcon fill="#FFFFFF" />
-    </nav>
+    <>
+      <MobileNavControls socialColor={socialColor} />
+      <nav className={styles.leftNav}>
+        <span style={{ display: 'block', margin: '20px 0 0' }}>NF</span>
+        <TwitterIcon fill={socialColor} />
+        <LinkedinIcon fill={socialColor} />
+        <GithubIcon fill={socialColor} />
+      </nav>
+    </>
   )
 }
 
