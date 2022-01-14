@@ -7,7 +7,14 @@
   --theme-color-lighter: #e9ecef;
   --theme-color-lightest: #f8f9fa;
 
-  --font-color: var(--theme-color-lightest);
+  /* https://coolors.co/0d1821-344966-b4cded-f0f4ef-bfcc94 */
+  --theme-color-rich-black-fogra: #0d1821;
+  --theme-color-independence: #344966;
+  --theme-color-light-steel-blue: #b4cded;
+  --theme-color-powder: #F0F4EF;
+  --theme-color-sage: #bfcc94;
+
+  --font-color: var(--theme-color-powder);
 }
 
 html,

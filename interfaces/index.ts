@@ -3,3 +3,7 @@ export type IconProps = {
   height?: number
   width?: number
 }
+
+export type MobileNavProps = {
+  socialColor: string
+}
