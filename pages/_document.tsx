@@ -1,9 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import LogRocket from 'logrocket'
-
-if (typeof window !== 'undefined') {
-  LogRocket.init('vt0abw/nathanfriemeldotcom')
-}
 
 class MyDocument extends Document {
   render() {
