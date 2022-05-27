@@ -10,9 +10,15 @@ const Nav = () => {
       <MobileNavControls socialColor={socialColor} />
       <nav className={styles.leftNav}>
         <span className={styles.logo}>NF</span>
-        <TwitterIcon fill={socialColor} />
-        <LinkedinIcon fill={socialColor} />
-        <GithubIcon fill={socialColor} />
+        <a href="https://twitter.com/nathanf">
+          <TwitterIcon fill={socialColor} />
+        </a>
+        <a href="https://www.linkedin.com/in/nathan-friemel/">
+          <LinkedinIcon fill={socialColor} />
+        </a>
+        <a href="https://github.com/nathanfriemel">
+          <GithubIcon fill={socialColor} />
+        </a>
       </nav>
     </>
   )
