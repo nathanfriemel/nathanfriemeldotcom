@@ -1,11 +1,18 @@
 import Head from 'next/head'
-// import Image from 'next/image'
+import Image from 'next/image'
 
 import styles from '../styles/Home.module.css'
-import { GithubIcon, LinkedinIcon, TwitterIcon } from '../icons'
 import Nav from '../components/nav'
+import ArticleCard from '../components/ArticleCard'
+import { DevToArticle } from '../interfaces'
 
-const IndexPage = () => {
+const USERNAME = 'nathanfriemel'
+
+type HomePageProps = {
+  articles: DevToArticle[]
+}
+
+const IndexPage = ({ articles }: HomePageProps) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -17,14 +24,28 @@ const IndexPage = () => {
       <Nav />
 
       <main className={styles.main}>
-        <article className={styles.article}>
+        <header className={styles.header}>
           <h1>
-            Welcome to the one day home of Nathan Friemel dot com
+            Hi, <br />I&apos;m Nathan, <br />I build websites, <br />I build teams
           </h1>
-        </article>
+        </header>
+        {articles.length > 0 && <div className={styles.articles}>
+          {articles.map(article => {
+            return (
+              <ArticleCard article={article} key={article.id} />
+            )
+          })}
+        </div>}
       </main>
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  const res = await fetch(`https://dev.to/api/articles?username=${USERNAME}`)
+  const data = await res.json()
+
+  return { props: { articles: data } }
 }
 
 export default IndexPage

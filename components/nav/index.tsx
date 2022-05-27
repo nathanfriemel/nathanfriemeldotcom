@@ -9,7 +9,7 @@ const Nav = () => {
     <>
       <MobileNavControls socialColor={socialColor} />
       <nav className={styles.leftNav}>
-        <span style={{ display: 'block', margin: '20px 0 0' }}>NF</span>
+        <span className={styles.logo}>NF</span>
         <TwitterIcon fill={socialColor} />
         <LinkedinIcon fill={socialColor} />
         <GithubIcon fill={socialColor} />

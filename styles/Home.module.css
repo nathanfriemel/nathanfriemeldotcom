@@ -1,6 +1,24 @@
 .container {
-  background-color: var(--theme-color-powder);
+  background-color: var(--theme-color-lightest);
   height: 100vh;
+}
+
+.header {
+  background-color: var(--theme-color-powder);
+  box-sizing: border-box;
+  height: 33vh;
+  padding: 40px;
+}
+
+.articles {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 50px;
 }
 
 @media (min-width: 426px) {
@@ -12,9 +30,9 @@
     grid-auto-flow: row;
     grid-template-areas: ". .";
   }
-}
 
-.article {
-  background-color: var(--theme-color-independence);
-  padding: 10px;
+  .main {
+    height: 100vh;
+    overflow-y: scroll;
+  }
 }
