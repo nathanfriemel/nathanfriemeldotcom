@@ -2,10 +2,13 @@ import { useState } from 'react'
 import classNames from 'classnames/bind'
 
 import styles from './nav.module.css'
-import { MobileNavProps } from '../../interfaces'
 import { GithubIcon, LinkedinIcon, TwitterIcon } from '../../icons'
 
 const cx = classNames.bind(styles)
+
+type MobileNavProps = {
+  socialColor: string
+}
 
 const MobileNav = ({ socialColor }: MobileNavProps) => {
   const [menuOpen, setMenuOpen] = useState(false)

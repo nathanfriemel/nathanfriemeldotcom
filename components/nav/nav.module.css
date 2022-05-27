@@ -2,6 +2,13 @@
   display: none;
 }
 
+.logo {
+  color: var(--theme-color-powder);
+  display: block;
+  font-size: 18px;
+  margin: 20px 0 0;
+}
+
 .mobileMenuControl {
   cursor: pointer;
   left: 15px;

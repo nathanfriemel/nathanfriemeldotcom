@@ -1,0 +1,40 @@
+.article {
+  background-color: var(--theme-color-powder);
+  border: 1px solid var(--theme-color-rich-black-fogra);
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* .image {
+  height: 200px;
+  width: 100%;
+} */
+
+.content {
+  padding: 20px;
+}
+
+.description {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 20px 0 80px;
+  line-height: 2rem;
+}
+
+.tags {
+  bottom: 20px;
+  left: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.tag {
+  background-color: var(--theme-color-independence);
+  color: var(--font-color-light);
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  padding: 10px;
+}

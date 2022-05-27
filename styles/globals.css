@@ -12,9 +12,10 @@
   --theme-color-independence: #344966;
   --theme-color-light-steel-blue: #b4cded;
   --theme-color-powder: #F0F4EF;
-  --theme-color-sage: #bfcc94;
+  --theme-color-sage: #bfcc94; /* #f5efec */
 
-  --font-color: var(--theme-color-powder);
+  --font-color: var(--theme-color-rich-black-fogra);
+  --font-color-light: var(--theme-color-lightest);
 }
 
 html,
@@ -33,17 +34,22 @@ a {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 4.2rem;
+  font-weight: 300;
+  margin: 0;
 }
 
 h2 {
   font-size: 2.4rem;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.6rem;
+  margin: 0;
 }
 
 h4 {
   font-size: 3.4rem;
+  margin: 0;
 }
